@@ -1,0 +1,74 @@
+// colors
+$color-primary: #ffffff;
+$color-secondary: #000000;
+$color-bright: #0266C1;
+
+$color-light: #F5F9FC;
+$color-dark: #2D383F;
+$color-blue: #9AC2E6;
+$color-text-placeholder: #B0B0B0;
+
+// opacity
+$opacity-heading: 0.03;
+$opacity-promo-heading: 0.2;
+$opacity-footer-social: 0.43;
+
+// decoration
+$text-shadow: 0px 0px 5px #000000;
+$form-border: 1px solid rgba(2, 102, 193, 0.112);
+
+// font-weight
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+$font-weight-extrabold: 800;
+$font-weight-black: 900;
+
+// font-size text
+$font-size-base: 16px;
+$font-size-xs: 13px;
+$font-size-s: 14px;
+$font-size-m: 19px;
+
+// font-size headings
+$display-5: 21px;
+$display-4: 24px;
+$display-3: 35px;
+$display-2: 45px;
+$display-1: 55px;
+
+// css custom properties
+:root {
+  --color-primary: #{$color-primary};
+  --color-secondary: #{$color-secondary};
+  --color-bright: #{$color-bright};
+
+  --color-dark: #{$color-dark};
+  --color-light: #{$color-light};
+  --color-light-blue: #{$color-blue};
+  --color-text-placeholder: #{$color-text-placeholder};
+  --opacity-heading: #{$opacity-heading};
+  --opacity-promo-heading: #{$opacity-promo-heading};
+  --opacity-footer-social: #{$opacity-footer-social};
+  --text-shadow: #{$text-shadow};
+  --form-border: #{$form-boder};
+
+  --font-weight-light: #{$font-weight-light};
+  --font-weight-normal: #{$font-weight-normal};
+  --font-weight-medium: #{$font-weight-medium};
+  --font-weight-bold: #{$font-weight-bold};
+  --font-weight-extrabold:#{$font-weight-extrabold};
+  --font-weight-black: #{$font-weight-black};
+
+  --font-size-base: #{$font-size-base};
+  --font-size-xs: #{$font-size-xs};
+  --font-size-s: #{$font-size-s};
+  --font-size-m: #{$font-size-m};
+
+  --display-5: #{$display-5};
+  --display-4: #{$display-4};
+  --display-3: #{$display-3};
+  --display-2: #{$display-2};
+  --display-1: #{$display-1};
+}
