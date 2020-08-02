@@ -19,7 +19,7 @@ $form-border: 1px solid rgba(2, 102, 193, 0.112);
 
 // font-weight
 $font-weight-light: 300;
-$font-weight-normal: 400;
+$font-weight-regular: 400;
 $font-weight-medium: 500;
 $font-weight-bold: 700;
 $font-weight-extrabold: 800;
@@ -27,6 +27,7 @@ $font-weight-black: 900;
 
 // font-size text
 $font-size-base: 16px;
+$font-size-xxs: 12px;
 $font-size-xs: 13px;
 $font-size-s: 14px;
 $font-size-m: 19px;
@@ -52,16 +53,17 @@ $display-1: 55px;
   --opacity-promo-heading: #{$opacity-promo-heading};
   --opacity-footer-social: #{$opacity-footer-social};
   --text-shadow: #{$text-shadow};
-  --form-border: #{$form-boder};
+  --form-border: #{$form-border};
 
   --font-weight-light: #{$font-weight-light};
-  --font-weight-normal: #{$font-weight-normal};
+  --font-weight-regular: #{$font-weight-regular};
   --font-weight-medium: #{$font-weight-medium};
   --font-weight-bold: #{$font-weight-bold};
-  --font-weight-extrabold:#{$font-weight-extrabold};
+  --font-weight-extrabold: #{$font-weight-extrabold};
   --font-weight-black: #{$font-weight-black};
 
   --font-size-base: #{$font-size-base};
+  --font-size-xxs: #{$font-size-xxs};
   --font-size-xs: #{$font-size-xs};
   --font-size-s: #{$font-size-s};
   --font-size-m: #{$font-size-m};

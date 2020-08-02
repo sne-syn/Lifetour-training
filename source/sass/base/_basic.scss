@@ -9,7 +9,14 @@ html {
 }
 
 body {
-  @include list-reset;
+  @include indent-reset;
   position: relative;
+}
 
+a {
+  @include link-reset;
+}
+
+li {
+  @include list-reset;
 }
