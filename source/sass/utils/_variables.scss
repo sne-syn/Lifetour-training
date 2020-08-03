@@ -39,6 +39,19 @@ $display-3: 35px;
 $display-2: 45px;
 $display-1: 55px;
 
+// Font stacks
+//
+$font-family-sans-serif:  "Montserrat", "Arial", sans-serif;
+
+// Base values
+$base-line-height: 1.55556;
+
+// Color set on the root html element.
+$base-color: $color-secondary;
+
+// The default font family.
+$base-font-family: $font-family-sans-serif;
+
 // css custom properties
 :root {
   --color-primary: #{$color-primary};
