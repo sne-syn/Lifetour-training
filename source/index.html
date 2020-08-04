@@ -9,45 +9,47 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
-
-  <header class="row">
-    <div class="navigation__logo">
-      <img src="img/logo.svg" alt="Логотип Lifetour. Организация походов в горы.">
+<body class="bg">
+  <header class="header bg__promo">
+    <div class="container">
+      <nav class="navigation navigation--white grid__row" style="justify-content: space-between">
+        <div class="navigation__logo">
+          <img src="img/logo.svg" alt="Логотип Lifetour. Организация походов в горы.">
+        </div>
+        <ul class="navigation__list grid__row">
+          <li><a href="#tour" class="">Туры</a></li>
+          <li><a href="#education">Обучение</a></li>
+          <li><a href="#about-us">О нас</a></li>
+          <li><a href="#review">Отзывы</a></li>
+          <li><a href="#gallery">Фотографии</a></li>
+          <li><a href="#contact">Контакты</a></li>
+        </ul>
+        <a href="tel:+88007253232">8 800 725 32 32</a>
+      </nav>
     </div>
-    <nav class=" navigation navigation--white">
-      <ul class="navigation__list row">
-        <li><a href="#tour" class="">Туры</a></li>
-        <li><a href="#education">Обучение</a></li>
-        <li><a href="#about-us">О нас</a></li>
-        <li><a href="#review">Отзывы</a></li>
-        <li><a href="#gallery">Фотографии</a></li>
-        <li><a href="#contact">Контакты</a></li>
-      </ul>
-    </nav>
-    <a href="tel:+88007253232">8 800 725 32 32</a>
   </header>
 
   <main>
-    <section class="color-white" style="background: lightblue">
+    <section class="hero container color-white">
       <h1>Походы в горы России</h1>
       <p>Профессионально организовываем экскурсии на самые красивые вершины страны</p>
       <a class="color-bright-element" href="#">Выбрать экскурсию</a>
-      <ul class="social social--blue row">
+      <ul class="social social--blue grid__row">
         <li class="social__item color-bright-element"><a class="color-white" href="#">VKontakte</a></li>
         <li class="social__item color-bright-element"><a class="color-white" href="#">Facebook</a></li>
         <li class="social__item color-bright-element"><a class="color-white" href="#">Instagram</a></li>
       </ul>
     </section>
-    <section id="tour" class="text-xxs">
+
+    <section id="tour" class="container text-xxs">
       <h2 class="color-dark">Ближайшие туры</h2>
-      <ul class="tour__buttons row">
+      <ul class="tour__buttons grid__row">
         <li><button class="color-bright-element">Назад</button></li>
         <li><button class="color-bright-element">Вперед</button></li>
       </ul>
-      <ul class="row" style="background: lightblue">
+      <ul class="grid__row" style="background: lightblue">
         <li>
-          <dl class="row">
+          <dl class="grid__row">
             <div>
               <dt class="visually-hidden">Направление:</dt>
               <dd class="color-bright-element">Кавказ</dd>
@@ -62,7 +64,7 @@
             </div>
           </dl>
           <h3 class="color-white">Путешествие вокруг Эльбруса</h3>
-          <dl class="row">
+          <dl class="grid__row">
             <div>
               <dt>Сложность:</dt>
               <dd>3 из 5</dd>
@@ -79,7 +81,7 @@
           <img src="img/tour-photo-1.jpg" width="385" height="412" alt="">
         </li>
         <li>
-          <dl class="row">
+          <dl class="grid__row">
             <div>
               <dt class="visually-hidden">Направление:</dt>
               <dd class="color-bright-element">Алтай</dd>
@@ -94,7 +96,7 @@
             </div>
           </dl>
           <h3 class="color-white">Путь к подножию Белухи</h3>
-          <dl class="row">
+          <dl class="grid__row">
             <div>
               <dt>Сложность:</dt>
               <dd>2 из 5</dd>
@@ -111,7 +113,7 @@
           <img src="img/tour-photo-2.jpg" width="385" height="412" alt="">
         </li>
         <li>
-          <dl class="row">
+          <dl class="grid__row">
             <div>
               <dt class="visually-hidden">Направление:</dt>
               <dd class="color-bright-element">Адыгей</dd>
@@ -126,7 +128,7 @@
             </div>
           </dl>
           <h3 class="color-white">Через Фишт к Черному морю</h3>
-          <dl class="row">
+          <dl class="grid__row">
             <div>
               <dt>Сложность:</dt>
               <dd>3 из 5</dd>
@@ -145,23 +147,25 @@
       </ul>
       <a class="color-dark text-bold" href="#">Показать все туры</a>
     </section>
-    <section class="education">
+    <section class="container education">
       <h2 class="color-dark">Обучение</h2>
-      <p>Обучение проводится квалифицированными специалистами, за плечами которых десятки пройденных маршрутов Кавказа,
+      <p>Обучение проводится квалифицированными специалистами, за плечами которых десятки пройденных маршрутов
+        Кавказа,
         Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
       <ul>
         <li>
           <h3 class="color-dark">Наши инструкторы</h3>
-          <ul class="row">
+          <ul class="grid__row">
             <li><button class="color-bright-element">Назад</button></li>
             <li><button class="color-bright-element">Вперед</button></li>
           </ul>
-          <ul class="row">
+          <ul class="grid__row">
             <li>
               <img src="img/instructor-1.jpg" alt="">
               <h4 class="text-bold">Александр Прокофьев</h4>
               <a href="#">Профиль VK</a>
-              <p class="text-xxs">Любит природу. Строгий, справедливый и внимательный инструктор, веселый и общительный
+              <p class="text-xxs">Любит природу. Строгий, справедливый и внимательный инструктор, веселый и
+                общительный
                 человек.</p>
             </li>
             <li>
@@ -214,7 +218,8 @@
         <li>
           <h3 class="color-dark">История компании</h3>
           <p>В далеком 2000 году мы начали заниматься туризмом - походы, поездки, восхождения, нам это настолько
-            понравилось, что мы этим стали жить. Спустя 5 лет, в 2005 году мы основали компанию, чтобы показывать людям
+            понравилось, что мы этим стали жить. Спустя 5 лет, в 2005 году мы основали компанию, чтобы показывать
+            людям
             удивительные места нашей страны.</p>
         </li>
         <li>
@@ -225,13 +230,13 @@
         </li>
       </ul>
     </section>
-    <section id="review" class="text-s">
+    <section id="review" class="container text-s">
       <h2 class="color-dark">Отзывы</h2>
-      <ul class="row">
+      <ul class="grid__row">
         <li><button class="color-bright-element">Назад</button></li>
         <li><button class="color-bright-element">Вперед</button></li>
       </ul>
-      <ul class="row">
+      <ul class="grid__row">
         <li>
           <div>
             <img src="img/frolov.jpg" alt="">
@@ -274,11 +279,11 @@
       <h2 class="color-dark">Фотогалерея</h2>
       <p>Добавляйте фото в Instagram с хэштегом <b>#лайфтур</b>, а также отмечайте нас на фото.
         Лучшие фотографии украсят этот раздел нашего сайта.</p>
-      <ul class="row">
+      <ul class="grid__row">
         <li><button class="color-bright-element">Назад</button></li>
         <li><button class="color-bright-element">Вперед</button></li>
       </ul>
-      <ul class="row">
+      <ul class="grid__row">
         <li><img src="img/img-gallery-1.jpg" alt=""></li>
         <li><img src="img/img-gallery-2.jpg" alt=""></li>
         <li><img src="img/img-gallery-3.jpg" alt=""></li>
@@ -288,25 +293,27 @@
         <li><img src="img/img-gallery-7.jpg" alt=""></li>
       </ul>
     </section>
-    <section id="contacts" class="color-white" style="background: lightblue">
-      <h2>Остались вопросы?</h2>
-      <p>Заполните форму и наш оператор свяжется с вами для консультации.</p>
-      <form action="submit">
-        <fieldset>
-          <label for="name">Имя:<input type="text" id="name" placeholder="Как к вам обращаться?"></label>
-          <label for="email">Email:<input type="email" id="email" placeholder="Телефон"></label>
-          <button type="submit" class="color-bright-element">Отправить</button>
-        </fieldset>
-      </form>
+    <section id="contacts" class="bg__form color-white">
+      <div class="container">
+        <h2>Остались вопросы?</h2>
+        <p>Заполните форму и наш оператор свяжется с вами для консультации.</p>
+        <form action="submit">
+          <fieldset>
+            <label for="name">Имя:<input type="text" id="name" placeholder="Как к вам обращаться?"></label>
+            <label for="email">Email:<input type="email" id="email" placeholder="Телефон"></label>
+            <button type="submit" class="color-bright-element">Отправить</button>
+          </fieldset>
+        </form>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <div class="navigation navigation--black row">
+  <footer class="container">
+    <div class="navigation navigation--black grid__row">
       <div class="logo">
         <img src="img/logo-footer.svg" alt="Логотип Lifetour. Организация походов в горы.">
       </div>
-      <ul class="row">
+      <ul class="grid__row">
         <li><a class="color-dark" href="#tour">Туры</a></li>
         <li><a class="color-dark" href="#education">Обучение</a></li>
         <li><a class="color-dark" href="#about-us">О нас</a></li>
@@ -316,7 +323,7 @@
       </ul>
       <a class="color-dark" href="tel:+88007253232">88007253232</a>
     </div>
-    <ul class="social social--white row">
+    <ul class="social social--white grid__row">
       <li class="social__item"><a href="#">VKontakte</a></li>
       <li class="social__item"><a href="#">Facebook</a></li>
       <li class="social__item"><a href="#">Instagram</a></li>

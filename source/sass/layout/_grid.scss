@@ -1,0 +1,12 @@
+.grid__row {
+  display: flex;
+  flex-direction: row;
+  //flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.grid__inline-block {
+  display: inline-block;
+  vertical-align: middle;
+}
