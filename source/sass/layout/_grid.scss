@@ -1,9 +1,8 @@
 .grid__row {
   display: flex;
   flex-direction: row;
-  //flex-wrap: wrap;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
 }
 
 .grid__inline-block {
