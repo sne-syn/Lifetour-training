@@ -6,6 +6,7 @@
 
 .tour__list {
   margin-bottom: 60px;
+  margin-right: -20px;
 }
 
 .tour__item {
@@ -15,6 +16,7 @@
   width: 384px;
   height: 412px;
   padding: 20px;
+  margin-right: 10px;
 }
 
 .tour__item img {
@@ -26,8 +28,12 @@
   height: auto;
 }
 
-.tour__description-up {
+.tour__description-top {
   margin-top: auto;
+  justify-content: space-between;
+}
+
+.tour__description-bottom {
   justify-content: space-between;
 }
 
@@ -48,10 +54,22 @@
 }
 
 .tour__item h3 {
-  width: 240px;
+  position: relative;
+  width: 250px;
   font-weight: $font-weight-bold;
   font-size: $display-4;
   line-height: 29px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: -10px;
+    left: 0;
+    width: 79px;
+    height: 1px;
+    background-color: $color-primary;
+    opacity: 0.28;
+  }
 }
 
 .tour__link {
@@ -60,7 +78,6 @@
   font-weight: $font-weight-bold;
   font-size: 16px;
   line-height: 20px;
-  /* identical to box height */
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
