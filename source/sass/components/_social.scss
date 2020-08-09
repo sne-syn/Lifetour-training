@@ -1,9 +1,26 @@
 .social {
-  width: 400px;
+  @include indent-reset;
+  width: 105px;
   margin-left: auto;
 }
 
 .social__item {
+  width: 22px;
+  height: 22px;
+  margin-right: 15px;
+  text-align: center;
   display: inline-block;
   vertical-align: middle;
+}
+
+.social__item:last-child {
+  margin-right: 0;
+}
+
+.social--blue {
+  padding-bottom: 180px;
+}
+
+.social--blue .social__item{
+  background: $color-blue;
 }

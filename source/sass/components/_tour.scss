@@ -1,0 +1,66 @@
+.tour__difficulty {
+  background: url('../../img/star.svg') no-repeat;
+  width: 20px;
+  height: 20px;
+}
+
+.tour__list {
+  margin-bottom: 60px;
+}
+
+.tour__item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 384px;
+  height: 412px;
+  padding: 20px;
+}
+
+.tour__item img {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+.tour__description-up {
+  margin-top: auto;
+  justify-content: space-between;
+}
+
+.tour__destination {
+  position: relative;
+  padding: 10px 20px;
+  padding-left: 30px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 15px;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    background: url(../../img/pin.svg) no-repeat;
+  }
+}
+
+.tour__item h3 {
+  width: 240px;
+  font-weight: $font-weight-bold;
+  font-size: $display-4;
+  line-height: 29px;
+}
+
+.tour__link {
+  display: block;
+  text-align: center;
+  font-weight: $font-weight-bold;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}

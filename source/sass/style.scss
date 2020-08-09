@@ -6,15 +6,19 @@
 @import "base/basic";
 @import "base/typography";
 
+@import "components/background";
+@import "components/buttons";
 @import "components/card";
+@import "components/contacts";
+@import "components/gallery";
+@import "components/heading";
 @import "components/hero";
 @import "components/navigation";
 @import "components/social";
-@import "components/background";
+@import "components/tour";
 // @import "components/slider";
 
 @import "layout/container";
 @import "layout/footer";
 @import "layout/grid";
 @import "layout/header";
-@import "layout/navigation";

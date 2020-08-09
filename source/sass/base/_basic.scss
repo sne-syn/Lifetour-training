@@ -6,7 +6,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
- // outline: 1px solid red;
+ //outline: 1px solid red;
 }
 
 body {
@@ -19,6 +19,10 @@ a {
   color: inherit;
 }
 
-li {
+ul,
+li,
+dl,
+dd {
   @include list-reset;
 }
+

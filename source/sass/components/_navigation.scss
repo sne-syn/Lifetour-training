@@ -1,5 +1,13 @@
-.navigation__list {
-  display: flex;
-  flex-direction: row;
+.navigation {
   justify-content: space-between;
+}
+
+.navigation__item {
+  margin-right: 46px;
+}
+
+.navigation__tel {
+  font-size: $font-size-m;
+  font-weight: $font-weight-bold;
+  line-height: 30px;
 }

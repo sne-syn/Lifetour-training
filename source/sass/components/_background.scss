@@ -1,11 +1,12 @@
-.bg__promo {
-  width: 100%;
+.bg__hero {
   height: 1050px;
-  background: url(../../img/bg-promo.png);
+  background: url(../../img/bg-promo.png) no-repeat;
+  background-size: cover;
 }
 
 .bg__form {
   width: 100%;
   height: 779px;
-  background: url(../../img/bg-feedback.png);
+  background: url(../../img/bg-feedback.png) no-repeat;
+  background-size: cover;
 }

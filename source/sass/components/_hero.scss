@@ -1,13 +1,41 @@
 .hero {
+  padding-top: 190px;
+}
+
+.hero__text-block {
+  position: relative;
+  width: 568px;
+  margin-bottom: 110px;
+}
+
+.hero__opacity-text {
   position: absolute;
-  width: 1164px;
+  top: -50px;
   left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -600px;
+  font-size: 93px;
+  font-weight: $font-weight-black;
+  line-height: 113px;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: $color-light;
+  opacity: 0.2;
+}
+
+.hero__heading {
+  @include indent-reset;
+  font-weight: $font-weight-extrabold;
+  font-size: $display-2;
+  line-height: 55px;
 }
 
 .hero__text {
-  width: 568px;
+  font-size: $font-size-m;
+  line-height: 28px;
+  padding-bottom: 40px;
+}
+
+.hero__button {
+  padding: 21px 39px 18px;
+  outline: 1px solid whitesmoke;
+  font-weight: $font-weight-medium;
 }

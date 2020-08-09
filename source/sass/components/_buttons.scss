@@ -1,0 +1,9 @@
+.buttons {
+  @include indent-reset;
+  width: 10%;
+}
+.buttons button {
+  color: inherit;
+  background: inherit;
+  border: none;
+}

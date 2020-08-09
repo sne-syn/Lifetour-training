@@ -10,13 +10,13 @@
 </head>
 
 <body class="no-js color grid bg">
-  <header class="header color__white">
+  <header class="header color__white color__bg-bright">
     <div class="container">
-      <nav class="navigation">
+      <nav class="navigation grid__row">
         <div class="navigation__logo">
-          <img src="img/logo.svg" alt="Логотип Lifetour. Организация походов в горы.">
+          <img src="img/logo.svg" width="207" height="62" alt="Логотип Lifetour. Организация походов в горы.">
         </div>
-        <ul class="navigation__list">
+        <ul class="navigation__list grid__row">
           <li class="navigation__item"><a href="#tour">Туры</a></li>
           <li class="navigation__item"><a href="#education">Обучение</a></li>
           <li class="navigation__item"><a href="#about-us">О нас</a></li>
@@ -24,40 +24,42 @@
           <li class="navigation__item"><a href="#gallery">Фотографии</a></li>
           <li class="navigation__item"><a href="#contact">Контакты</a></li>
         </ul>
-        <a href="tel:+88007253232">8 800 725 32 32</a>
+        <a class="navigation__tel" href="tel:+88007253232">8 800 725 32 32</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="hero color__white">
+    <section class="hero color__white color__bg-bright">
       <div class="container">
-        <div class="hero__text">
+        <div class="hero__text-block">
+          <span class="hero__opacity-text">Trekking</span>
           <h1 class="hero__heading">Походы в горы России</h1>
-          <p>Профессионально организовываем экскурсии на самые красивые вершины страны</p>
-          <a class="color__bright-element" href="#">Выбрать экскурсию</a>
+          <p class="hero__text">Профессионально организовываем экскурсии <br>на самые красивые вершины страны</p>
+          <a class="hero__button color__bright-element" href="#">Выбрать экскурсию</a>
         </div>
         <ul class="social social--blue">
-          <li class="social__item color__bright-element"><a href="#">VKontakte</a></li>
-          <li class="social__item color__bright-element"><a href="#">Facebook</a></li>
-          <li class="social__item color__bright-element"><a href="#">Instagram</a></li>
+          <li class="social__item grid__inline-block color__bright-element"><a href="#">VK</a></li>
+          <li class="social__item grid__inline-block color__bright-element"><a href="#">F</a></li>
+          <li class="social__item grid__inline-block color__bright-element"><a href="#">In</a></li>
         </ul>
       </div>
     </section>
-
-    <section id="tour" class="tour color__dark">
+    <section id="tour" class="tour color__white">
       <div class="container">
-        <h2 class="">Ближайшие туры</h2>
-        <ul class="buttons">
-          <li><button class="color__bright-element">Назад</button></li>
-          <li><button class="color__bright-element">Вперед</button></li>
-        </ul>
-        <ul class="tour__list">
+        <div class="grid__row">
+          <h2 data-text="Ближайшие туры" class="heading color__dark">Ближайшие туры</h2>
+          <ul class="buttons grid__margin-auto">
+            <li class="grid__inline-block color__bright-element"><button>Назад</button></li>
+            <li class="grid__inline-block color__bright-element"><button>Вперед</button></li>
+          </ul>
+        </div>
+        <ul class="tour__list grid__row">
           <li class="tour__item">
-            <dl class="">
+            <dl  class="grid__row tour__description-up">
               <div>
                 <dt class="visually-hidden">Направление:</dt>
-                <dd class="color__bright-element">Кавказ</dd>
+                <dd class="tour__destination color__bright-element">Кавказ</dd>
               </div>
               <div>
                 <dt class="visually-hidden">Продолжительность тура:</dt>
@@ -68,11 +70,11 @@
                 <dd>3 ночи</dd>
               </div>
             </dl>
-            <h3 class="color__white">Путешествие вокруг Эльбруса</h3>
-            <dl class="">
+            <h3 class="">Путешествие вокруг Эльбруса</h3>
+            <dl  class="grid__row tour__description-down">
               <div>
                 <dt>Сложность:</dt>
-                <dd>3 из 5</dd>
+                <dd class="tour__difficulty"><span class="visually-hidden">3 из 5</span></dd>
               </div>
               <div>
                 <dt>Даты набора:</dt>
@@ -83,13 +85,13 @@
                 <dd class="">до 15 чел.</dd>
               </div>
             </dl>
-            <img src="img/tour-photo-1.jpg" width="385" height="412" alt="">
+            <img src="img/tour-photo-1.jpg" width="384" height="412" alt="" loading="lazy">
           </li>
           <li class="tour__item">
-            <dl class="">
+            <dl class="grid__row tour__description-up">
               <div>
                 <dt class="visually-hidden">Направление:</dt>
-                <dd class="color__bright-element">Алтай</dd>
+                <dd class="tour__destination color__bright-element">Алтай</dd>
               </div>
               <div>
                 <dt class="visually-hidden">Продолжительность тура:</dt>
@@ -100,11 +102,11 @@
                 <dd>13 ночей</dd>
               </div>
             </dl>
-            <h3 class="color__white">Путь к подножию Белухи</h3>
-            <dl class="">
+            <h3 class="">Путь к подножию Белухи</h3>
+            <dl  class="grid__row tour__description-down">
               <div>
                 <dt>Сложность:</dt>
-                <dd>2 из 5</dd>
+                <dd class="tour__difficulty"><span class="visually-hidden">2 из 5</span></dd>
               </div>
               <div>
                 <dt>Даты набора:</dt>
@@ -115,13 +117,13 @@
                 <dd class="">до 25 чел.</dd>
               </div>
             </dl>
-            <img src="img/tour-photo-2.jpg" width="385" height="412" alt="">
+            <img src="img/tour-photo-2.jpg" width="384" height="412" alt="" loading="lazy">
           </li>
           <li class="tour__item">
-            <dl class="">
+            <dl  class="grid__row tour__description-up">
               <div>
                 <dt class="visually-hidden">Направление:</dt>
-                <dd class="color__bright-element">Адыгей</dd>
+                <dd class="tour__destination color__bright-element">Адыгей</dd>
               </div>
               <div>
                 <dt class="visually-hidden">Продолжительность тура:</dt>
@@ -132,11 +134,11 @@
                 <dd>6 ночей</dd>
               </div>
             </dl>
-            <h3 class="color__white">Через Фишт к Черному морю</h3>
-            <dl class="">
+            <h3 class="">Через Фишт к Черному морю</h3>
+            <dl  class="grid__row tour__description-2">
               <div>
                 <dt>Сложность:</dt>
-                <dd>3 из 5</dd>
+                <dd class="tour__difficulty"><span class="visually-hidden">3 из 5</span></dd>
               </div>
               <div>
                 <dt>Даты набора:</dt>
@@ -147,25 +149,27 @@
                 <dd class="">до 22 чел.</dd>
               </div>
             </dl>
-            <img src="img/tour-photo-3.jpg" width="385" height="412" alt="">
+            <img src="img/tour-photo-3.jpg" width="384" height="412" alt="" loading="lazy">
           </li>
         </ul>
-        <a href="#">Показать все туры</a>
+        <a class="tour__link color__dark" href="#">Показать все туры</a>
       </div>
     </section>
     <section class="education" id="education">
       <div class="container">
-        <h2 class="">Обучение</h2>
+        <h2 class="heading" data-text="Обучение">Обучение</h2>
         <p>Обучение проводится квалифицированными специалистами, за плечами которых десятки пройденных маршрутов
           Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
         <ul>
           <li>
-            <h3 class="">Наши инструкторы</h3>
-            <ul class="buttons">
-              <li><button class="color__bright-element">Назад</button></li>
-              <li><button class="color__bright-element">Вперед</button></li>
-            </ul>
-            <ul class="">
+            <div class="grid__row">
+              <h3 class="">Наши инструкторы</h3>
+              <ul class="buttons grid__margin-auto">
+                <li class="grid__inline-block color__bright-element"><button>Назад</button></li>
+                <li class="grid__inline-block color__bright-element"><button>Вперед</button></li>
+              </ul>
+            </div>
+            <ul class="grid__row">
               <li>
                 <img src="img/instructor-1.jpg" alt="">
                 <h4 class="">Александр Прокофьев</h4>
@@ -208,7 +212,7 @@
       </div>
       <div class="container">
         <h3 class="color__dark">Процесс обучения</h3>
-        <ul>
+        <ul class="grid__row">
           <li>Изучение спортивного туристского движения</li>
           <li>Подготовка и техническое снаряжение в походах</li>
           <li>Лекции по экологии, окружающей среде и гигиене</li>
@@ -219,33 +223,35 @@
       </div>
     </section>
     <section id="about-us" class="about-us">
-      <div style="width: 50%; margin-left:auto;">
-      <h2 class="color__dark">О нас</h2>
-      <ul>
-        <li>
-          <h3 class="color__dark">История компании</h3>
-          <p>В далеком 2000 году мы начали заниматься туризмом - походы, поездки, восхождения, нам это настолько
-            понравилось, что мы этим стали жить. Спустя 5 лет, в 2005 году мы основали компанию, чтобы показывать
-            людям
-            удивительные места нашей страны.</p>
-        </li>
-        <li>
-          <h3 class="color__dark">Наша цель</h3>
-          <p>Подарить вам незабываемые впечатления от похода в горы. Мы берем на себя все организационные вопросы. При
-            организации мы обязательно учтем все ваши пожелания. Вам остенется только наслаждаться незабываемым
-            приключеним.</p>
-        </li>
-      </ul>
-    </div>
+      <div>
+        <h2 class="heading color__dark" data-text="О нас">О нас</h2>
+        <ul>
+          <li>
+            <h3 class="color__dark">История компании</h3>
+            <p>В далеком 2000 году мы начали заниматься туризмом - походы, поездки, восхождения, нам это настолько
+              понравилось, что мы этим стали жить. Спустя 5 лет, в 2005 году мы основали компанию, чтобы показывать
+              людям
+              удивительные места нашей страны.</p>
+          </li>
+          <li>
+            <h3 class="color__dark">Наша цель</h3>
+            <p>Подарить вам незабываемые впечатления от похода в горы. Мы берем на себя все организационные вопросы. При
+              организации мы обязательно учтем все ваши пожелания. Вам остенется только наслаждаться незабываемым
+              приключеним.</p>
+          </li>
+        </ul>
+      </div>
     </section>
     <section id="review" class="review">
       <div class="container">
-        <h2 class="color__dark">Отзывы</h2>
-        <ul class="buttons">
-          <li><button class="color__bright-element">Назад</button></li>
-          <li><button class="color__bright-element">Вперед</button></li>
-        </ul>
-        <ul class="">
+        <div class="grid__row">
+          <h2 class="heading color__dark" data-text="Отзывы">Отзывы</h2>
+          <ul class="buttons grid__margin-auto">
+            <li class="grid__inline-block color__bright-element"><button>Назад</button></li>
+            <li class="grid__inline-block color__bright-element"><button>Вперед</button></li>
+          </ul>
+        </div>
+        <ul class="grid__row">
           <li>
             <div>
               <img src="img/frolov.jpg" alt="">
@@ -287,29 +293,40 @@
     </section>
     <section class="gallery color__dark" id="gallery">
       <div class="container">
-        <h2 class="">Фотогалерея</h2>
-        <p>Добавляйте фото в Instagram с хэштегом <b>#лайфтур</b>, а также отмечайте нас на фото.
-          Лучшие фотографии украсят этот раздел нашего сайта.</p>
-        <ul class="buttons">
-          <li><button class="color__bright-element">Назад</button></li>
-          <li><button class="color__bright-element">Вперед</button></li>
-        </ul>
+        <div class="grid__row">
+          <div class="gallery__text">
+            <h2 class="heading" data-text="Фотогалерея">Фотогалерея</h2>
+            <p>Добавляйте фото в Instagram с хэштегом <b>#лайфтур</b>, а также отмечайте нас на фото.
+              Лучшие фотографии украсят этот раздел нашего сайта.</p>
+          </div>
+          <ul class="buttons grid__margin-auto">
+            <li class="grid__inline-block color__bright-element"><button>Назад</button></li>
+            <li class="grid__inline-block color__bright-element"><button>Вперед</button></li>
+          </ul>
+        </div>
       </div>
-      <ul class="gallery__list">
-        <li><img src="img/img-gallery-1.jpg" alt=""></li>
-        <li><img src="img/img-gallery-2.jpg" alt=""></li>
-        <li><img src="img/img-gallery-3.jpg" alt=""></li>
-        <li><img src="img/img-gallery-4.jpg" alt=""></li>
-        <li><img src="img/img-gallery-5.jpg" alt=""></li>
-        <li><img src="img/img-gallery-6.jpg" alt=""></li>
-        <li><img src="img/img-gallery-7.jpg" alt=""></li>
+      <ul class="gallery__list grid__row">
+        <li class="galery__item galery__item--height" ><img src="img/img-gallery-1.jpg" alt="" width="275"
+          height="449" loading="lazy"></li>
+        <li class="galery__item galery__item--height" ><img src="img/img-gallery-2.jpg" alt="" width="298"
+          height="179" loading="lazy"></li>
+        <li class="galery__item galery__item--height" ><img src="img/img-gallery-3.jpg" alt="" width="275"
+          height="265" loading="lazy"></li>
+        <li class="galery__item galery__item--height" ><img src="img/img-gallery-4.jpg" alt="" width="298"
+          height="265" loading="lazy"></li>
+        <li class="galery__item galery__item--height" ><img src="img/img-gallery-5.jpg" alt="" width="298"
+          height="179" loading="lazy"></li>
+        <li class="galery__item galery__item--height" ><img src="img/img-gallery-6.jpg" alt="" width="298"
+          height="265" loading="lazy"></li>
+        <li class="galery__item galery__item--height" ><img src="img/img-gallery-7.jpg" alt="" width="275"
+          height="449px" loading="lazy"></li>
       </ul>
     </section>
     <section id="contacts" class="contacts bg__form color__white">
       <div class="container">
         <h2>Остались вопросы?</h2>
         <p>Заполните форму и наш оператор свяжется с вами для консультации.</p>
-        <form class="form" action="submit">
+        <form class="form grid__row" action="submit">
           <fieldset>
             <label for="name">Имя:<input type="text" id="name" placeholder="Как к вам обращаться?"></label>
             <label for="email">Email:<input type="email" id="email" placeholder="Телефон"></label>
@@ -322,11 +339,11 @@
 
   <footer class="color__dark">
     <div class="container">
-      <div class="navigation">
+      <div class="navigation grid__row">
         <div class="navigation__logo">
           <img src="img/logo-footer.svg" alt="Логотип Lifetour. Организация походов в горы.">
         </div>
-        <ul class="navigation__list">
+        <ul class="navigation__list grid__row">
           <li class="navigation__item"><a href="#tour">Туры</a></li>
           <li class="navigation__item"><a href="#education">Обучение</a></li>
           <li class="navigation__item"><a href="#about-us">О нас</a></li>
@@ -336,7 +353,7 @@
         </ul>
         <a href="tel:+88007253232">88007253232</a>
       </div>
-      <ul class="social">
+      <ul class="social grid__row">
         <li class="social__item"><a href="#">VKontakte</a></li>
         <li class="social__item"><a href="#">Facebook</a></li>
         <li class="social__item"><a href="#">Instagram</a></li>

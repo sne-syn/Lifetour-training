@@ -41,11 +41,13 @@ $display-1: 55px;
 
 // Font stacks
 //
-$font-family-sans-serif:  "Montserrat", "Arial", sans-serif;
+$font-family-sans-serif: "Montserrat",
+"Arial",
+sans-serif;
 
 // Base values
-$base-line-height: 1.55556;
-
+$line-height-heading: 43px;
+$line-height-basic: 25px;
 // Color set on the root html element.
 $base-color: $color-secondary;
 
@@ -86,4 +88,7 @@ $base-font-family: $font-family-sans-serif;
   --display-3: #{$display-3};
   --display-2: #{$display-2};
   --display-1: #{$display-1};
+
+  --line-height-heading: #{$line-height-heading};
+  --line-height-basic: #{$line-height-basic};
 }
