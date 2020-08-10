@@ -48,6 +48,7 @@ sans-serif;
 // Base values
 $line-height-heading: 43px;
 $line-height-basic: 25px;
+$line-height-auto: 120%;
 // Color set on the root html element.
 $base-color: $color-secondary;
 
@@ -91,4 +92,5 @@ $base-font-family: $font-family-sans-serif;
 
   --line-height-heading: #{$line-height-heading};
   --line-height-basic: #{$line-height-basic};
+  --line-height-auto: #{$line-height-auto};
 }
